@@ -11,8 +11,8 @@ namespace APIFinancas
                 throw new Exception("Parâmetros para cálculo inválidos!");
 
             return valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses); // Simulação de falha 
-            //return Math.Round(
-            //    valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses), 2);
+            return Math.Round(
+                valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses), 2);
         }
     }
 }
